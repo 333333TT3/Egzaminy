@@ -8,14 +8,11 @@
     <div id="banner">
         <h1>Sieci komputerowe</h1>
     </div>
-    <div id="menu">
-        <a href="kwerendy.txt">Pobierz dokument</a>
-    </div>
  <section>
 <div id="left">
 <h2>Aktualizacja i zamówienia materiałów</h2>
 <p>Do wewnętrznego użytku firmy</p>
-<img src="obraz.jpg" alt="sieć komputerowa">
+<img src="obraz.jpg" alt="page" height="500px">
 </div>
 <div id="right">
 <table>
@@ -37,6 +34,54 @@
 </table>
 </div>
 </section>
+<script>
+var Orderid = 0;
+    function lackOF()
+	{
+		let value1 = document.getElementById("first1").innerText;
+		let value2 = document.getElementById("second1").innerText;
+		let value3 = document.getElementById("third1").innerText;
+		let value4 = document.getElementById("fourth1").innerText;
+
+		let backgroundValue1 = document.getElementById('first1');
+		let backgroundValue2 = document.getElementById('second1');
+		let backgroundValue3 = document.getElementById('third1');
+		let backgroundValue4 = document.getElementById('fourth1');
+
+		let valueTab = [value1,value2,value3,value4];
+		let backgroundValueTab = [backgroundValue1,backgroundValue2,backgroundValue3,backgroundValue4];
+
+		for(let i=0;i<4;i++) 
+		{		
+			if(valueTab[i] == 0 )
+			{
+			backgroundValueTab[i].style.backgroundColor = "red";
+			}
+			else if(valueTab[i] >= 1 && valueTab[i] <=5)
+			{
+			backgroundValueTab[i].style.backgroundColor = "yellow";
+			}
+			else
+			backgroundValueTab[i].style.backgroundColor = "Honeydew";
+		}
+	}
+			
+		function Update(updateId)
+		{
+			let value = prompt("Podaj nową ilość:");
+			document.getElementById(updateId).innerHTML = value;
+			lackOF();
+		}
+		function Order(idies)
+		{
+			let id = document.getElementById(idies).innerHTML;
+			Orderid = Orderid+1;
+			alert(" numer zamówienia " + Orderid+" produkt "+ id);
+		}
+</script>
+<div id="menu">
+    <a href="kwerendy.txt">Nasza strona internetowa</a>
+</div>
     <div id="footer">
         <p>Stronę opracował: Antoni Kubicki</p>
     </div>

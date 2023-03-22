@@ -13,6 +13,7 @@ section
 {
     clear: both;
     display:flex;
+    background-color:  PaleGreen;
 }
 #left
 {
@@ -61,4 +62,8 @@ button:hover
 {
     background-color: honeydew;
     color:darkgreen;
+}
+#menu
+{
+    background-color: palegreen;
 }

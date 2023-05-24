@@ -1,0 +1,33 @@
+* {
+    font-family: Helvetica;
+    background-color: rgb(70, 130, 180);
+}
+img {
+    height: 40%;
+}
+.banner, footer{
+    height: 30px;
+    color: white;
+    text-align: center;
+    background-color: rgb(70, 130, 180);
+}
+.main{
+    margin: 50px;
+    text-align: center;
+    background-color: rgb(176, 196, 222);
+    clear: both;
+}
+.right {
+    width: 20%;
+    height: 300px;
+    color: white;
+    background-color: rgb(70, 130, 180);
+    float: right;
+}
+.left {
+    width: 80%;
+    height: 300px;
+    color: white;
+    background-color: rgb(70, 130, 180);
+    float: left;
+}
